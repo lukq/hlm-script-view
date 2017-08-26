@@ -1,0 +1,2083 @@
+﻿<!DOCTYPE html>
+<script id=scr type=hlm>
+;    ---------------------------------------
+;    ! mapa HLIPY. Verze ze dne 13.12.1988 !
+;    ---------------------------------------
+
+; mistnost 0
+	room	0;0,7,17,28,0,0;(0;2,1,3)
+	call	hlipa
+	kanal	3,2,3;ustip
+equa1	call	equa
+	pxz	8,2;2;1,8,3
+	end
+
+; mistnost 7
+	room	7;0,8,0,0,0,0;(1;2,1,9)
+	call	kopecsj
+	end
+
+; mistnost 8
+	room	8;7,9,19,12,0,0
+	sloup	2;8,1,9
+	sloup	2;1,8,9
+	sloup	2;1,1,9
+	sloup	2;8,8,9
+podlah7	pxy	8,8;10;1,1,8
+	end
+
+; mistnost 9
+	room	9;8,15,0,10,0,0
+	call	podlah7
+	pyz	8,2;10;8,1,9
+	spy	8,2;1,1,9
+	cz	2;0;1,5,9
+	end
+
+; mistnost 10
+	room	10;12,30,9,11,0,0
+	call	equa1
+mosts	call	most7
+schodzm	msx	4;9;6,2,3
+schodz1	cz	3;0;3,4,8
+	sy	2;9;3,3,7
+	end
+
+; mistnost 11
+	room	11;13,34,10,38,0,0
+	pxy	8,8;1;1,1,2
+	spy	8,2;1,1,3
+	pyz	8,2;1;8,1,3
+	call	most7
+	end
+
+; mistnost 12
+	room	12;29,10,8,13,0,0
+	spx	2,2;7,1,9 
+	spx	2,2;7,8,9 
+	pxy	7,8;9;1,1,2
+	pxy	2,8;9;7,1,8
+	pyz	8,6;9;7,1,3
+	spx	6,2;1,1,3
+	pxz	6,2;9;1,8,3
+	sx	7;9;3,5,3
+	bod	0;7,5,8
+	cz	2;0;4,8,3
+	end
+
+; mistnost 13
+	room	13;32,11,12,0,0,0
+	pxy	8,8;3;1,1,2
+	pxy	6,6;4;2,2,3
+	pxy	4,4;5;3,3,4
+	pxy	2,2;6;4,4,5
+	spy	8,3;1,1,3
+	cz	2;5;8,1,3
+	cz	2;4;8,8,3
+	end
+
+; mistnost 14
+	room	14;25,26,0,21,0,44
+	pxy	2,8;7;4,1,10
+	cz	3;2;3,1,10
+	cz	3;2;6,1,10
+	cz	3;2;3,8,10
+	cz	3;2;6,8,10
+	end
+
+; mistnost 15
+	room	15;9,16,0,0,0,0
+	call	kopecj2
+	end
+
+; mistnost 16 P
+	room	16;15,0,0,0,0,33
+	call	konc1
+	cx	2;0;4,5,2
+	end
+
+; mistnost 17 (Schodiste)
+	room	17;0,18,24,0,142,45
+posch	pxy	8,8;5;1,1,2
+	pxz	8,2;5;1,8,3
+	spy	7,2;1,1,3
+	pyz	8,2;5;8,1,3
+	pyz	4,3;5;8,2,4
+	pyz	2,3;0;8,3,3
+
+ 	call	schody
+	call	diras
+	end
+
+; mistnost 18
+	room	18;17,19,0,0,0,0
+	call	kopecsj
+	end
+
+; mistnost 19 
+	room	19;18,20,0,8,0,0
+mistn19	pxy	8,8;8;1,1,8
+	pyz	8,2;8;8,1,9
+	sloup	2;1,1,9
+	sloup	2;1,8,9
+	end
+
+; mistnost 20
+	room	20;19,21,0,0,0,0
+	call	equa
+	pxz	8,2;2;1,8,3
+	pxy	8,3;7;1,6,8
+	pxy	8,8;7;1,1,2
+	cy	5;7;3,1,8
+	cy	5;7;6,1,8
+	spy	3,2;1,6,9
+	pyz	3,2;2;8,6,9
+	plocha	(0,+,+;5),(+,0,0;2),7;4,2,3
+	pxy	2,2;0;4,5,8
+	end
+
+; mistnost 21
+	room	21;20,22,0,0,0,0
+	pxy	8,8;5;1,1,2
+	spy	8,2;1,1,3
+	pyz	8,2;5;8,1,3
+	cy	5;7;3,4,8
+	cy	5;7;6,4,8
+	pxy	2,4;7;4,1,8
+	end
+
+; mistnost 22
+	room	22;21,23,26,0,0,0
+	pxy	8,8;3;1,1,2
+	spy	8,2;1,1,3
+	pyz	8,2;3;8,1,3
+	pyz	4,2;0;8,3,3
+	pxy	2,8;7;4,1,8
+	pxy	4,2;7;6,4,8
+	end
+
+; mistnost 23
+	room	23;22,0,0,0,0,0
+	pxy	2,3;7;4,6,8
+konc1	pxy	8,6;3;1,4,2
+	pyz	6,2;3;8,4,3
+	spy	6,2;1,4,3
+	spx	6,2;2,4,3
+	end
+
+; mistnost 24
+	room	24;0,0,0,17,0,40
+	call	vytahd
+	bod	4;3,8,9
+	end
+
+; mistnost 25
+	room	25;0,14,0,0,0,43
+	call	ectvr5
+	cx	2;0;4,4,2
+	bod	2;4,4,1
+	plocha	(+,0,0;2),(0,+,-;5),7;4,1,10
+	sy	3;7;3,4,3
+	sy	3;7;6,4,3
+	cx	2;7;4,6,5
+	end
+
+; mistnost 26
+	room	26;14,0,0,22,0,0
+	call	ectvr
+	pyz	4,2;0;1,3,3
+	pxy	5,2;7;1,4,8
+	pxy	2,6;7;4,4,10
+	cz	8;2;3,8,5
+	cz	8;2;6,8,5
+	end
+
+; mistnost 27
+	room	27;0,28,0,0,0,0;6,5,13
+	plocha	(0,+,+;3),(+,0,0;2),10;4,3,3
+	pxy	4,4;10;3,3,6
+	pxy	2,2;0;4,4,6
+	sx	4;5;3,6,7
+	bod	9;6,5,11
+vchodj	call	ectvr
+	pxz	2,2;0;4,1,3
+	end
+
+; mistnost 28
+	room	28;27,29,0,31,0,0
+	cz	2;5;8,5,9
+mosts3	call	ectvr
+mosts2	pxz	2,2;0;4,8,3
+	pxz	4,2;0;3,1,3
+	call	mosts
+	end
+
+; mistnost 29
+	room	29;28,12,0,0,0,0
+	call	ectvr
+	pxz	4,2;0;3,8,3
+	cz	2;0;4,1,3
+	pxz	6,2;10;2,5,3
+	cz	2;0;4,5,3
+	kanal	4,6,2;ust63
+	end
+
+; mistnost 30
+	room	30;10,0,0,0,0,0
+	call	konc1
+	end
+
+; mistnost 31
+	room	31;0,32,28,35,0,0
+mosts1	call	equa1
+	call	mosts
+
+	end
+
+; mistnost 32
+	room	32;31,13,0,0,0,0
+	plocha	(0,+,+;5),(+,0,0;4),8;3,2,3
+equa2	pxy	8,8;4;1,1,2
+hranyy	pyz	8,2;3;8,1,3
+	spy	8,2;1,1,3
+	end
+
+; mistnost 34
+	room	34;11,0,0,0,0,65
+	call	equa2
+	call	diras
+	spx	6,2;2,1,3
+	end
+
+; mistnost 35
+	room	35;0,0,31,0,0,0
+	call	ectvr
+	cz	2;5;1,5,9
+mostsm	call	most7
+	call	schodz1
+	end
+
+; mistnost 36
+	room	36;0,37,0,0,36,67
+	call	ectvr
+	cz	2;0;4,1,3
+mschodd	pxy	2,2;0;4,4,2
+	call	mschod
+	end
+
+; mistnost 37
+	room	37;36,38,0,0,0,0
+	call	vchodj
+	bod	0;4,8,3
+	bod	10;5,7,3
+	pxz	4,2;10;3,6,3
+	cx	5;10;3,7,4
+	cy	2;10;2,6,4
+	bod	10;7,6,4
+	end
+
+; mistnost 38
+	room	38;37,39,11,74,0,0
+mistn38	call	mosts3
+	end
+
+; mistnost 39
+	room	39;38,0,0,0,0,0
+	call	konc1
+	cz	2;3;2,8,3
+	cz	2;3;7,8,3
+	end
+
+;---------------------------------------
+;!                     ( patro 0 )     !
+;---------------------------------------
+; mistnost 40
+	room	40;0,41,0,45,0,84;(14;7,7,3)
+	call	vytahd
+	pxz	6,2;0;2,1,3
+	bod	4;3,8,8
+	end
+
+; mistnost 41
+	room	41;40,0,0,46,0,0
+	call	ectvr
+	pxy	6,6;3;2,2,2
+	pxz	6,2;0;2,8,3
+	cz	2;5;8,5,9
+	spx	6,2;2,1,3
+mostsx1	call	mostsm
+	msx	4;9;6,3,4
+	bod	9;6,4,3
+	end
+
+; mistnost 42
+	room	42;41,43,0,47,0,86
+	call	ectvr3
+	pxy	4,4;0;3,3,2
+	cz	2;0;2,1,3
+	pyz	6,2;0;1,2,3
+	end
+
+; mistnost 43
+	room	43;42,44,0,48,25,0
+	call	ectvr4
+	pyz	4,2;0;1,3,3
+	call	mschod
+	bod	0;2,8,3
+	end
+
+; mistnost 44
+	room	44;43,0,0,49,0,88
+	call	ectvr2
+	pyz	6,2;0;1,2,3
+	cx	2;0;2,2,2
+	bod	7;2,2,1
+	end
+
+
+; mistnost 45
+	room	45;0,0,40,51,17,91
+mist45	call	posch
+	spx	6,2;2,1,3
+	cz	2;0;1,4,3
+	end
+
+; mistnost 46
+	room	46;0,47,41,52,0,0;3,2,11
+	call	most7
+	pxy	8,6;7;1,1,2
+	spy	5,2;1,1,3
+	pyz	6,2;2;8,1,3
+	pxz	7,2;2;1,6,3
+	sx	3;7;3,2,3
+	msx	3;7;5,3,6
+	bod	7;3,2,9
+	end
+
+; mistnost 47
+	room	47;46,48,42,53,0,0
+	call	ectvr2
+	pxy	8,8;7;1,1,2
+	pyz	6,2;0;8,2,3
+	pxz	6,2;0;2,8,3
+	cy	6;4;5,3,2
+	cx	3;4;4,7,2
+	bod	3;3,6,2
+	bod	3;7,6,2
+	end
+
+; mistnost 48
+	room	48;47,49,43,54,0,0
+	call	ectvr3
+	cz	2;0;2,1,3
+	pyz	4,2;0;8,3,3
+	end
+
+; mistnost 49
+	room 	49;48,50,44,55,0,0
+	call	ectvr2
+	pyz	6,2;0;8,2,3
+	bod	0;2,8,3
+	pxz	7,2;0;1,1,3
+	pyz	7,2;0;1,1,3
+	end
+
+; mistnost 50
+	room	50;49,0,0,56,0,0
+	call	ectvr5
+	pxz	7,2;0;1,8,3
+	pyz	6,2;0;1,2,3
+	end
+	
+	subr
+ectvr5	pxy	8,8;4;1,1,2
+	call	sklen
+	pxz	8,2;4;1,8,3
+	pyz	8,2;4;8,1,3
+	end
+
+; mistnost 51
+	room	51;0,52,45,57,0,0
+	pxy	8,8;4;1,1,2
+	pyz	8,2;5;8,1,3
+	pxz	7,2;5;1,8,3
+	spx	7,2;1,1,3
+	cz	2;0;4,1,3
+	cz	2;0;8,4,3
+	end
+
+; mistnost 52
+	room	52;51,53,46,0,0,0
+mistn52	call	ectvr
+	pxz	4,2;0;3,1,3
+	cz	2;0;4,8,3
+mostsz	sx	6;5;3,5,3
+mosts1z	sloup	3;8,6,8
+	sloup	3;8,4,8
+	end
+
+; mistnost 53
+	room	53;52,0,0,59,0,0
+	call	ectvr1
+	pxz	4,2;0;3,8,3
+	cz	2;0;1,7,3
+	end
+
+; mistnost 54
+	room	54;53,55,48,60,0,0
+	call	ectvr3
+	pxz	6,2;0;2,1,3
+	end
+
+; mistnost 55
+	room	55;54,56,49,61,0,0
+	pxy	8,8;5;1,1,2
+	call	skleny
+	cz	2;5;8,8,3
+	end
+
+; mistnost 56
+	room	56;55,0,50,0,0,0
+	pxy	8,8;7;1,1,2
+sklen1	call	sklenx
+	call	skleny
+	end
+
+
+; mistnost 57
+	room	57;72,58,51,62,0,0
+	pxy	8,8;6;1,1,2
+	pxz	8,2;6;1,8,3
+	spy	7,2;1,1,3
+	sy	4;2;5,5,4
+	cx	3;2;4,5,3
+	cy	2;0;5,4,3
+	cz	2;6;8,1,3
+	cz	5;6;4,8,5
+	cz	5;6;6,8,5
+	cz	4;6;7,2,3
+	sloup	4;2,2,3
+	plocha	(+,0,0;4),(0,+,-;3),3;3,1,5
+	end
+
+; mistnost 58
+	room	58;57,0,0,62,0,0
+mist58	pxy	8,8;3;1,1,5
+	pxy	4,4;0;3,3,5
+	call	ectvr1
+	pxz	6,2;0;2,8,3
+	pyz	4,2;0;1,3,3
+	pyz	8,2;3;8,1,6
+	spx	7,2;1,1,6
+	spy	8,2;1,1,6
+	pxz	2,2;3;1,8,6
+	cz	2;3;7,8,6
+	end
+
+; mistnost 59
+	room	59;0,60,53,0,0,0
+	call	kopecsj
+	pxz	7,2;10;1,8,3
+	cz	2;0;8,7,3
+	end
+
+; mistnost 60
+	room 60;59,61,0,64,0,0
+	call	mistn19
+	spy	6,2;1,2,9
+	cz	2;0;1,5,9
+	cz	2;8;7,1,9
+	sloup	2;2,1,9
+	end
+	
+; mistnost 61
+	room	61;60,0,0,0,0,0
+mist61 	pxy	6,5;5;2,4,8
+	pyz	6,2;5;7,4,9
+	spy	5,2;2,4,9
+	spx	4,2;3,4,9
+	end
+
+; mistnost 62
+	room	62;0,0,58,0,0,0
+	call	ectvr2
+	pyz	4,2;0;8,3,3
+	end
+
+; mistnost 63
+	room	63;0,64,0,0,0,0
+	call	ectvr1
+	cz	2;0;4,1,3
+ust63	usti	8,6,3
+	end
+
+; mistnost 64
+	room	64;63,0,60,0,0,0
+	call	mistn52
+	spx	7,2;1,1,3
+	end
+
+; mistnost 65
+	room	65;0,66,0,70,34,0
+	call	schody
+	call	ectvr2
+	pyz	7,2;0;1,1,3
+	pxz	6,2;0;2,1,3
+	cy	2;5;3,1,10
+	
+
+
+	end
+
+; mistnost 66
+	room	66;65,0,0,71,0,0
+	call	ectvr2
+usti66	usti	8,8,3
+	pxz	7,2;0;1,8,3
+	pyz	6,2;0;1,2,3
+	cy	2;7;3,7,10
+	msy	4;7;3,6,10
+	cx	5;7;1,3,10
+	end
+
+; mistnost 67
+	room	67;0,68,0,0,36,109
+	cy	3;7;4,1,8
+mschod	sy	2;2;4,4,1
+	msy	2;2;5,5,3
+	sy	2;2;4,4,5
+	msy	2;2;5,5,7
+	sy	2;2;4,4,9
+	msy	2;2;5,5,11
+	sy	2;2;4,4,13
+	msy	2;2;5,5,15
+	end
+
+; mistnost 68
+	room	68;67,69,63,0,110,216
+	cy	8;7;4,1,8
+
+	end
+
+; mistnost 69
+	room	69;68,0,0,0,0,216
+	sy	4;7;4,5,5
+	cy	4;7;5,2,4
+	cx	3;7;5,5,4
+	end
+
+; mistnost 70
+	room	70;0,71,65,73,0,0
+	call	ectvr2
+	pxz	7,2;0;2,1,3
+	pyz	7,2;0;8,1,3
+	cy	6;7;4,1,10
+	msx	3;7;3,6,11
+	sloup	13;1,7,3
+	sloup	13;1,5,3
+	end
+
+; mistnost 71
+	room	71;70,0,66,0,0,0
+	call	ectvr2
+	pxz	7,2;0;2,8,3
+	pyz	6,2;0;8,2,3
+	cx	5;7;4,3,10
+	cy	5;7;4,4,10
+	end
+
+; mistnost 72
+	room	72;0,57,0,0,0,101
+	cy	4;7;5,1,7
+	cz	3;7;4,1,7
+	cz	3;7;6,1,7
+	end
+
+; mistnost 73
+	room	73;0,0,70,0,74,75
+	msx	3;7;8,6,13
+	end
+
+; mistnost 74
+	room	74;0,0,38,0,0,73
+	msx	6;7;8,6,1
+	call	mostsz
+	end
+
+; mistnost 75
+	room	75;76,80,82,78,0,0
+	call	dploch
+	call	osum
+	end
+
+	subr
+dploch	pxy	8,8;7;1,1,2
+	end
+
+; mistnost 76
+	room	76;0,75,83,77,0,0
+mist76	call	dploch
+	call	dpx8
+	end
+
+; mistnost 77
+	room	77;0,78,76,0,0,0
+	call	dploch
+	call	skleny
+	call	dpx8
+	end
+
+; mistnost 78
+	room	78;77,79,75,0,0,0
+	call	dploch
+	call	skleny
+
+	call	ctyri
+	end
+
+; mistnost 79
+	room	79;78,0,80,0,0,0
+	call	dploch
+	call	sklenx
+	call	skleny
+	end
+
+; mistnost 80
+	room	80;75,0,81,79,0,0
+	call	dploch
+	call	sklenx
+	end
+
+; mistnost 81
+	room	81;82,0,0,80,0,0
+	call	dploch
+	call	sklenx
+	call	dpy8
+	end
+
+; mistnost 82
+	room	82;83,81,0,75,0,0
+	call	dploch
+	call	dpy8
+
+	call	dva
+	end
+
+; mistnost 83
+	room	83;0,82,0,76,0,0
+	call	dploch
+	call	dpx8
+	call	dpy8
+	end
+
+;    --------------------------------------------
+;    !	-1 patro				!
+;    --------------------------------------------
+
+
+
+; mistnost 84
+	room	84;0,85,0,91,0,111
+	call	vytahd
+	bod	4;3,8,7
+	end
+
+; mistnost 85
+	room	85;84,86,135,92,0,0
+	call	ectvr4
+	cz	2;0;2,1,3
+	pyz	6,2;0;8,2,3
+	end
+
+; mistnost 86
+	room	86;85,87,0,93,0,0
+	call	ectvr2
+	cz	2;0;5,1,3
+	bod	0;2,8,3
+schody1	sloup	3;4,1,8
+	sloup	3;6,1,8
+	msy	6;5;5,6,3
+	end
+
+; mistnost 87
+	room	87;86,88,0,94,0,248
+	kanal	1,3,2;usti95
+	cy	2;5;5,7,2
+	call	schody1
+mostza1	CX	5;5;1,5,8
+	SPX	6,3;1,4,8
+	SPX	4,3;1,6,8
+	CY	3;5;5,6,8
+	SPY	4,3;6,5,8
+	SPY	2,3;4,7,8
+	
+	end
+
+; mitnost 88
+	room	88;87,89,0,95,44,116
+	call	mostza1
+	sy	2;7;7,1,7
+	msx	6;7;6,2,9
+	end
+
+; mistnost 89
+	room	89;88,90,0,96,0,116
+	pxy	5,5;7;4,1,2
+	cz	2;0;6,5,3
+	cy	2;0;6,5,2
+	bod	7;6,5,1
+	pyz	5,2;2;8,1,3
+	pxz	4,2;2;4,5,3
+	spy	4,2;4,1,3
+	cz	2;0;4,2,3
+	cx	4;7;1,2,2
+	cz	2;0;7,5,3
+	sy	5;7;7,4,3
+	cz	2;2;8,5,5
+	cz	2;2;6,5,5
+	cz	2;0;6,5,3
+	end
+ 
+; mistnost 90
+	room	90;89,0,0,0,0,0
+	call	ectvr1v
+	pxz	3,2;0;5,8,3
+	pxy	8,8;3;1,1,5
+	pxy	6,6;0;2,2,5
+	end
+
+
+; mistnost 91
+	room	91;0,92,84,97,45,117
+	call	mist45
+	end
+
+; mistnost 92
+	room	92;91,93,85,98,0,0
+	call	ectvr3
+	call	schody1
+	msx	4;7;4,3,7
+	sloup	12;1,2,3
+	sloup	12;1,4,3
+	end
+
+; mistnost 93
+	room	93;92,94,86,99,0,0
+	cx	5;7;1,4,9
+	cy	3;7;5,5,9
+	bod	7;5,8,8
+	end
+
+; mistnost 94
+	room	94;93,95,87,100,0,0
+	call	most7
+	cx	8;7;1,3,2
+	cy	2;7;3,1,2
+	end
+
+; mistnost 95
+	room	95;94,96,88,0,0,0
+	call	ctver81
+	cz	2;0;8,5,9
+	cy	5;7;3,4,2
+usti95	usti	8,7,10
+	end
+
+; mistnost 96
+	room	96;95,0,89,0,0,0
+	pxy	3,3;4;6,1,2
+	spx	3,2;6,1,3
+	sloup	2;6,2,3
+	pxz	3,2;4;6,3,3
+	end
+
+; mistnost 97
+	room	97;0,98,91,102,0,0
+	call	ectvr1v
+	pxz	4,2;0;3,1,3
+	pyz	6,2;0;1,2,3
+	cz	2;0;8,4,3
+	msy	6;7;4,6,3
+	msx	6;7;6,4,3
+	end
+
+; mistnost 98
+	room	98;97,99,92,103,0,122
+	cy	8;2;4,1,8
+	pxy	6,8;3;2,1,2
+	cx	4;7;1,7,6
+	cx	8;7;1,3,10
+mist981	pxy	6,8;3;2,1,2
+	pyz	8,2;3;7,1,3
+	spy	8,2;2,1,3
+	end
+
+; mistnost 99
+	room	99;98,100,93,105,0,123
+	call	mist981
+	cy	8;7;4,1,8
+	cx	7;7;2,4,9
+	bod	0;4,4,9
+
+	end
+
+; mistnost 100
+	room	100;99,0,94,0,0,124
+	call	mist61
+	pxz	2,2;5;5,8,9
+	cz	2;5;3,8,9
+	pxy	6,7;3;2,2,2
+	spy	7,2;2,2,3
+	spx	4,2;3,2,3
+	pyz	7,2;3;7,2,3
+	cz	2;0;7,3,3
+	cz	3;0;7,5,9
+	bod	5;8,5,8
+	bod	3;8,3,2
+	end
+
+; mistnost 101
+	room	101;0,102,0,0,0,112
+	cy	6;7;4,1,8
+	cx	3;7;3,5,8
+	end
+
+; mistnost 102
+	room	102;101,103,97,105,0,125
+	cy	6;5;8,2,2
+	sx	5;2;4,4,4
+	msx	3;2;3,4,5
+	sy	4;2;4,5,5
+	end
+
+; mistnost 103
+	room	103;102,104,98,106,0,126
+	plocha	(0,+,0;4),(*,0,0;3),3;2,1,4
+	cx	8;7;1,7,6
+	cx	8;7;1,3,10
+
+	end
+
+; mistnost 104
+	room	104;103,0,99,107,0,127;4,4,13
+	msy	4;3;4,8,4
+	cy	7;3;6,2,4
+	cy	7;3;2,2,4
+	cx	3;3;3,2,4
+	pxy	8,4;9;1,1,7
+	pyz	4,2;9;8,1,8
+	spx	7,2;1,1,8
+	spy	3,2;1,2,8
+	kanal	6,4,7;usti95
+	kanal	7,3,7;usti95
+	kanal	4,2,7;usti95
+	msx	3;9;6,3,8
+	bod	9;4,4,11
+
+	end
+
+; mistnost 105
+	room	105;0,106,102,108,0,129
+	cx	5;7;4,4,7
+	end
+
+; mistnost 106
+	room	106;105,107,103,109,0,130
+	msx	4;7;8,7,6
+	sx	3;7;6,3,8
+	cy	3;7;5,1,8
+	end
+
+; mistnost 107
+	room	107;106,0,104,110,0,140
+	call	mostza1
+	kanal	5,5,8;usti95
+
+	end
+
+; mistnost 108
+	room	108;0,109,105,0,0,218
+	kanal	7,1,2;usti66
+	end
+
+; mistnost 109
+	room	109;108,110,106,0,67,132;(12;4,3,14)
+	call	ectvr3
+	call	mschodd
+	pxz	2,2;0;4,1,3
+	cz	2;0;7,8,3
+	end
+
+; mistnost 110
+	room	110;109,0,107,0,0,216
+	call	ectvr4
+	pxz	2,2;0;4,8,3
+	call	mostsz
+	end
+
+;    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;    |  -2 patro			|
+;    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+; mistnost 111
+	room	111;0,112,0,117,0,133
+	call	vytahd
+	pxy	3,4;7;3,3,2
+	pyz	3,4;5;5,3,3
+	pxz	3,4;5;3,6,3
+	pxy	3,4;5;3,3,7
+	pxz	3,4;5;3,3,3
+	bod	4;3,8,6
+	end
+
+; mistnost 112
+	room	112;111,113,0,118,91,248
+	cx	6;7;1,5,8
+	sy	2;7;5,3,6
+	bod	7;6,6,9
+	cy	2;7;3,1,10
+	end
+
+; mstnost 113
+	room	113;112,114,0,119,0,247
+	cx	6;7;1,3,10
+	cy	6;9;3,4,10
+	cy	2;7;4,1,10
+	cy	2;7;6,1,10
+	end
+
+; mistnost 114
+	room	114;113,115,0,120,0,234
+	cy	8;7;4,1,10
+	cy	8;7;6,1,10
+	end
+
+; mistnost 115
+	room	115;114,116,0,0,0,233
+	cy	8;7;6,1,10
+	cy	4;7;4,5,10
+	cy	3;7;3,3,9
+	end
+
+; mistnost 116
+	room	116;115,0,0,0,89,231
+	msy	6;7;6,8,10
+	
+	end
+
+; mistnost 117
+	room	117;0,118,111,121,91,0
+	call	sklenx
+	call	posch
+	pxy	8,8;4;1,1,2
+	end
+
+; mistnost 118
+	room	118;117,119,112,122,0,242
+	cx	8;7;1,5,8
+	cy	4;7;5,1,8
+	end
+
+; mistnost 119
+	room	119;118,120,113,123,0,241
+	cx	7;7;1,5,8
+	cy	6;7;5,3,8
+	sx	2;7;3,3,6
+	msx	3;7;3,2,8
+	bod	7;3,1,8
+	cy	3;7;7,1,10
+	bod	7;8,3,10
+	end
+
+; mistnost 120
+	room	120;119,0,114,124,0,246
+	cx	7;7;1,6,10
+	cy	6;7;3,3,8
+	cx	2;7;1,3,8
+	cy	2;7;7,7,10
+	end
+
+; mistnost 121
+	room	121;0,122,117,125,0,254
+	cx	6;6;1,6,8
+	msy	3;6;4,5,8
+	sy	2;6;4,1,8
+	cx	6;6;1,3,8
+	cy	2;6;6,1,8
+	end
+
+; mistnost 122
+	room	122;121,123,118,126,0,243
+	msy	4;7;6,8,8
+	msy	3;7;4,8,8
+	cx	8;7;1,5,8
+	cy	2;7;4,4,10
+	cx	4;7;1,3,10
+
+	end
+
+; mistnost 123
+	room	123;122,124,119,127,0,240
+	cx	8;7;1,5,8
+	cx	8;7;1,2,10
+	cy	4;7;3,1,10
+	
+	end
+
+; mistnost 124
+	room	124;123,0,120,128,0,245
+	cx	6;7;1,4,10
+	sx	3;7;6,6,8
+	bod	7;6,5,9
+	cy	4;7;3,5,10
+	bod	7;8,3,8
+	end
+
+; mistnost 125
+	room	125;0,126,121,129,0,220
+	cx	8;2;1,6,8
+	cx	6;2;3,3,8
+	cy	2;2;3,4,8
+	end
+
+; mistnost 126
+	room	126;125,127,122,130,0,239
+	cx	8;4;1,5,8
+	cx	4;7;5,3,10
+	cy	2;7;5,1,10
+	end
+
+; mistnost 127
+	room	127;126,128,123,131,0,244
+	cx	8;3;1,5,8
+	cy	8;3;5,1,10
+	cx	3;3;6,2,10
+	end
+
+; mistnost 128
+	room	128;127,0,124,0,0,226
+	cy	5;10;5,4,10
+	cx	3;10;6,4,10
+	end
+
+; mistnost 129
+	room	129;0,130,125,0,0,218
+	cy	6;5;5,1,8
+	cx	3;5;6,6,8
+	sx	2;5;3,4,6
+	bod	5;3,5,5
+	end
+
+; mistnost 130
+	room	130;129,131,126,132,0,217
+	cy	8;7;5,1,8
+	cx	8;7;1,5,8
+	end
+
+; mistnost 131
+	room 131;130,0,127,0,0,216
+	cx	3;5;6,5,8
+	cy	4;5;5,5,8
+	end
+
+; mistnost 132
+	room	132;0,0,130,0,109,0;(14;2,7,3)
+	call	mschod
+	call	ectvr4
+	call	mosts1z
+	sx	3;5;6,5,6
+	bod	5;6,4,5
+	end
+
+; mistnost 133
+	room	133;0,0,0,134,0,0
+	call	mist58
+	pxz	8,5;3;1,8,3
+	end
+
+; mistnost 134
+	room	134;0,0,133,0,0,0
+	pxy	4,8;3;5,1,2
+	spx	4,2;5,1,3
+	spy	6,2;5,2,3
+	spx	4,2;5,8,3
+	cz	2;3;8,7,3
+	cz	2;3;8,2,3
+	pxy	4,8;3;5,1,5
+	kanal	7,2,2;usti144
+	end
+
+; mistnost 135 
+	room	135;136,0,137,85,0,0
+	pxy	8,8;2;1,1,2
+	call	sklenx
+	cz	2;2;1,8,3
+	spx	6,2;3,3,3
+	spy	5,2;3,4,3
+	spy	4,2;5,5,3
+	spx	2,2;7,5,3
+	end
+
+; mistnost 136
+	room	136;0,135,138,84,0,0
+	pxy	8,8;2;1,1,2
+	call	skleny
+	pxz	8,2;2;1,8,3
+	spy	7,2;3,1,3
+	spy	6,2;5,1,3
+	spx	3,2;6,6,3
+
+	end
+   
+; mistnost 137
+	room	137;138,0,0,135,0,0
+	pxy	8,8;2;1,1,2
+	call	sklenx
+	pyz	8,2;2;8,1,3
+	spx	6,2;1,3,3
+	spx	4,2;1,5,3
+	spy	5,2;6,4,3
+	spy	3,2;4,6,3
+	end
+
+; mistmost 138
+	room	138;139,137,0,136,0,0
+	pxy	8,8;2;1,1,2
+	pyz	8,2;2;8,1,3
+	pxz	8,2;2;1,8,3
+	cz	2;0;2,8,3
+	spx	3,2;1,6,3
+	spy	7,2;4,1,3
+	spy	6,2;6,1,3
+	end
+
+; mistmost 139
+	room	139;0,138,0,0,0,0
+	call	ectvr
+	pxy	8,8;2;1,1,2
+	pxz	6,2;0;2,1,3
+	call	sklenx
+	cz	2;0;2,1,3
+	kanal	4,7,2;usti144
+	end
+
+; mistnost 140 - propast
+	room	140;0,0,0,0,0,215
+	kanal	4,4,7;ust63
+	end
+;*******************
+;*   1  patro      *
+;*******************
+
+; mistnost 141
+	room	141;0,144,0,142,0,24
+	call	vytahd
+	bod	4;3,8,10
+	end
+
+; mistnost 142
+	room	142;0,143,141,0,142,17
+	call	mist45
+	cz	2;0;5,1,3
+ustip	usti	4,3,10
+	end
+
+; mistnost 143
+	room	143;142,146,144,0,0,18
+	msy	7;6;5,8,2
+	bod	6;5,1,8
+	sy	2;6;4,3,4
+	cy	2;6;5,1,2
+	bod	6;5,3,3
+	end
+
+; mistnost 144
+	room	144;141,145,0,143,0,10
+usti144	usti	7,1,11
+	pxy	2,2;7;5,1,8
+	cz	3;2;4,1,8
+	cz	3;2;7,1,8
+	end
+
+; mistnost 145
+	room	145;144,0,0,146,0,12
+	plocha	(0,+,0;2),(+,+,0;6),7;1,3,8
+	cz	3;2;4,8,8
+	cz	3;2;7,8,8
+	end
+
+; mistnost 146
+	room	146;143,0,145,0,0,19
+	call	ectvr3
+	cz	2;0;5,8,3
+	call	ctver81
+	pxy	8,8;4;1,1,8
+	cz	2;0;5,8,9
+	pyz	2,2;0;8,3,9
+	cx	5;0;2,4,2
+	end
+
+	subr
+ctyri	cy	6;9;6,2,2
+	cx	5;9;3,4,2
+	plocha	(+,+,0;4),(0,0,0;1),9;3,4,2
+	bod	7;3,4,2
+	end
+
+	subr
+osum	cx	2;9;4,2,2
+	cx	2;9;4,5,2
+	cx	2;9;4,7,2
+	cy	2;9;3,3,2
+	cy	2;9;6,3,2
+	bod	9;3,6,2
+	bod	9;6,6,2
+	end
+
+	subr
+dva	cx	4;9;2,2,2
+	cx	2;9;3,4,2
+	cx	2;9;3,7,2
+	cy	2;9;5,5,2
+	bod	9;2,6,2
+	bod	9;2,3,2
+	end
+
+	subr
+dpx8	pxz	8,2;7;1,8,3
+	end
+
+	subr
+dpy8	pyz	8,2;7;8,1,3
+	end
+
+	subr
+ectvr	pxy	8,8;10;1,1,2 
+	pyz	8,2;10;8,1,3
+	pxz	8,2;10;1,8,3
+sklen	spx	7,2;1,1,3
+	spy	7,2;1,1,3
+	end
+
+	subr
+sklenx	spx	8,2;1,1,3
+	end
+
+	subr
+skleny	spy	8,2;1,1,3
+	end
+
+	subr
+ectvr1	pxy	8,8;3;1,1,2
+	pyz	8,2;3;8,1,3
+	pxz	8,2;3;1,8,3
+	call	sklen
+	end
+
+	subr
+ectvr1v	call	ectvr1
+	cz	4;3;8,8,3
+	cz	4;3;8,1,3
+	cz	4;3;1,8,3
+	sloup	4;1,1,3
+	end
+	
+	subr
+ectvr3	call	ectvr1v
+	pxy	4,4;6;3,3,2
+	pxy	2,2;3;4,4,2
+	end
+
+
+	subr
+ectvr2	call	ectvr1
+	pxy	8,8;3;1,1,2
+	plocha	(*,0,0;4),(0,*,0;4),10;1,1,2
+	end
+
+	subr
+ectvr4	call	ectvr2
+	pxy	8,8;7;1,1,2
+	end
+
+	subr
+ctver81	pxy	8,8;7;1,1,8
+	pxz	8,2;6;1,8,9
+	pyz	7,2;6;8,1,9
+	spx	7,2;1,1,9
+	spy	6,2;1,2,9
+	end
+
+	subr
+vytahd	pxy	8,8;6;1,1,2
+	pxy	4,4;0;3,3,2
+	pyz	8,2;6;8,1,3
+	pxz	8,2;6;1,8,3
+	spx	7,2;1,1,3
+	spy	7,2;1,1,3
+	pyz	2,2;0;1,3,3
+	cz	7;3;3,8,6
+	end
+
+	subr
+most7	spx	8,3;1,6,8
+	spx	8,3;1,4,8
+	cx	8;5;1,5,8
+	end
+
+	subr
+kopecsj	cx	8;10;1,8,2
+	plocha	(0,+,-;7),(+,0,0;8),10;1,1,8
+	sloup	2;1,8,3
+	cz	2;10;8,8,3
+	ssp	(0,+,-;7),2;1,1,9
+	plocha	(0,+,-;7),(0,0,+;2),10;8,1,9
+	end
+
+	subr
+kopecj2	plocha	(0,+,+;8),(+,0,0;8),10;1,2,2 
+	ssp	(0,+,+;7),2;1,2,3
+	sloup	2;1,1,3
+	cz	2;10;8,1,3
+	cx	8;10;1,1,2
+	plocha	(0,+,+;7),(0,0,+;2),10;8,2,3
+	end
+
+	subr
+equa	spy	7,2;1,1,3
+	pyz	8,2;2;8,1,3
+podlaha	pxy	8,8;2;1,1,2
+	end
+
+	subr
+schody	plocha	(+,0,+;4),(0,+,0;2),2;3,5,3
+	plocha	(-,0,+;4),(0,+,0;2),2;6,3,6
+	plocha	(+,0,+;4),(0,+,0;2),2;3,5,9
+	plocha	(-,0,+;3),(0,+,0;2),2;6,3,12
+	end
+
+	subr
+diras	cy	2;2;5,3,1
+	pxy	2,2;0;5,3,2
+	end
+
+; mistnost 33  - end
+	room	33;0,0,0,0,0,0
+	call	ectvr
+	kanal	7,7,2;ust33
+ust33	usti	8,7,3
+hlipa	cz	6;1;1,8,7
+	cz	4;1;3,8,7
+	bod	1;2,8,10
+
+	cz	6;1;5,8,7
+
+	cz	4;1;7,8,7
+	sx	2;1;7,8,12
+
+	cz	6;1;8,7,5
+	cz	4;1;8,5,7
+	bod	1;8,6,7
+	bod	1;8,6,10
+
+	cz	5;1;8,1,7
+	cy	2;1;8,2,7
+	cy	2;1;8,2,9
+	cy	2;1;8,2,11
+	bod	1;8,3,8
+	end
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;          tajuplne sklepeni            ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; mistnost 238
+
+	room	238;252,237,0,248,0,0
+	call	seprpd
+	end
+
+; mistnost 237
+
+	room	237;238,236,0,247,0,0
+	call	seprpd
+	end
+
+; mistnost 236
+
+	room	236;237,235,0,234,0,0
+	call	seprav
+	call	pyramz
+	end
+
+; mistnost 235
+
+	room	235;236,232,0,233,0,0
+	call	seprav
+	call	pyramp
+	end
+
+; mistnost 234
+
+	room	234;247,233,236,246,0,0
+	call	pyraml
+	end
+
+; mistnost 233
+
+	room	233;234,231,235,230,0,0
+	call	pyramb
+	end
+
+; mistnost 232
+
+	room	232;235,0,0,231,0,0
+	call	prikps
+	call	seprav
+	end
+
+; mistnost 231
+
+	room	231;233,0,232,229,0,0
+prikps	call	sepod
+prikopp	plocha	(+,0,0;8),(0,-,+;2),2;1,4,3
+prikopx	spx	8,2;1,1,3
+	end
+
+; mistnost 230
+
+	room	230;246,229,233,228,0,0
+	call	sepod
+	end
+
+; mistnost 229
+
+	room	229;230,0,231,227,0,0
+	call	prikps
+	end
+
+; mistnost 228
+
+	room	228;245,227,230,225,0,0
+	call	sepod
+	end
+
+; mistnost 227
+
+	room	227;228,0,229,224,0,0
+	call	prikps
+	end
+
+; mistnost 226
+
+	room	226;244,225,245,215,0,0
+	call	sepod
+	end
+
+; mistnost 225
+
+	room	225;226,224,228,214,0,0
+	call	sepod
+	end
+
+; mistnost 224
+
+	room	224;225,0,227,213,0,0
+	call	prikps
+	end
+
+; mistnost 223
+
+	room	223;0,249,251,222,0,0
+	call	seplpd
+	end
+
+; mistnost 222
+
+	room	222;0,254,223,221,0,0
+	call	seplpd
+	end
+
+; mistnost 221
+
+	room	221;0,220,222,219,0,0
+	call	seplpd
+	end
+
+; mistnost 220
+
+	room	220;221,239,254,218,0,0
+	call	sepod
+	end
+
+; mistnost 219
+
+	room	219;0,218,221,212,0,0
+	call	seplpd
+	end
+
+; mistnost 218
+
+	room	218;219,217,220,211,0,0
+	call	sepod
+	end
+
+; mistnost 217
+	room	217;218,216,239,210,0,0
+	call	sepod
+	end
+
+; mistnost 216
+
+	room	216;217,215,244,209,0,0
+	call	sepod
+	end
+
+; mistnost 215
+
+	room	215;216,214,226,208,0,0
+	call	sepod
+	end
+
+; mistnost 214
+
+	room	214;215,213,225,207,0,0
+	call	sepod
+	end
+
+; mistnost 213
+
+	room	213;214,0,224,206,0,0
+	call	prikps
+	end
+
+; mistnost 212
+
+	room	212;0,211,219,0,0,0
+	call	prikls
+	call	selev
+	end
+
+; mistnost 211
+
+	room	211;212,210,218,0,0,0
+prikls	call	sepod
+prikopl	spy	8,2;1,1,3
+	plocha	(0,+,0;8),(-,0,+;2),2;4,1,3
+	end
+
+; mistnost 210
+
+	room	210;211,209,217,0,0,0
+	call	prikls
+	end
+
+; mistnost 209
+
+	room	209;210,208,216,0,0,0
+	call	prikls
+	end
+
+; mistnost 208
+
+	room	208;209,207,215,0,0,0
+	call	prikls
+	end
+
+; mistnost 207
+
+	room	207;208,206,214,0,0,0
+	call	prikls
+	end
+
+; mistnost 206
+
+	room	206;207,0,213,0,0,0
+	call	prikls
+	call	prikopx
+	end
+
+; mistnost 240 - dolni cast velke pyramidy
+
+	room	240;243,245,241,244,0,0
+	plocha	(+,0,+;8),(0,+,+;8),9;1,1,2
+	plocha	(0,+,0;2),(-,+,0;3),9;8,6,13
+	call	pyrp1
+	call	pyrp2
+clrp	pxy	8,8;0;1,1,16
+	pxy	8,8;0;1,1,15
+	pxy	8,8;0;1,1,14
+	end
+
+; mistnost 241 - prava cast velke pyramidy
+
+	room	241;242,246,247,240,0,0
+	plocha	(-,0,+;8),(0,+,+;8),9;8,1,2
+	plocha	(-,0,0;7),(-,0,+;7),9;7,1,2
+	pyz	7,8;9;1,2,2
+	plocha	(0,+,0;7),(0,+,+;7),9;1,2,9
+	pxy	2,2;9;2,7,13
+	cz	3;9;2,8,11
+	cz	16;0;1,8,1
+	call	clrp
+	end
+
+; mistnost 242 - zadni cast velke pyramidy
+
+	room	242;249,241,248,243,0,0
+	plocha	(-,0,+;8),(0,-,+;8),9;8,8,2
+	pxz	8,8;9;1,1,2
+	pyz	7,8;9;1,2,2
+	plocha	(-,0,0;7),(-,0,+;7),9;7,1,9
+	plocha	(0,-,0;7),(0,-,+;7),9;1,7,9
+	bod	9;2,2,13
+	cz	16;0;1,1,1
+	call	clrp
+	end
+
+; mistnost 243 - leva cast velke pyramidy
+
+	room	243;254,240,242,239,0,0
+	plocha	(+,0,+;8),(0,-,+;8),9;1,8,2
+	plocha	(0,-,0;7),(0,-,+;7),9;1,7,2
+	pxz	7,8;9;2,1,2
+	plocha	(+,0,0;7),(+,0,+;7),9;2,1,9
+	pxy	2,2;9;7,2,13
+	cz	3;9;8,2,11
+	cz	16;0;8,1,1
+	call	clrp
+	end
+
+; mistnost 244 - spodni leva cast velke pyramidy
+
+	room	244;239,226,240,216,0,0
+pyramb	call	sepod
+	plocha	(-,+,0;8),(0,+,+;8),9;8,1,2
+	end
+
+; mistnost 245 - spodni prava cast velke pyramidy
+
+	room	245;240,228,246,226,0,0
+	call	pyramb
+	end
+
+; mistnost 246 - spodni prava vzdalena cast velke pyramidy
+
+	room	246;241,230,234,245,0,0
+pyramp	call	sepod
+	plocha	(+,+,0;8),(0,+,+;8),9;1,1,2
+pyrp1	plocha	(0,+,0;7),(0,+,+;7),9;1,2,2
+	end
+
+; mistnost 247 - zadni prava cast velke pyramidy
+
+	room	247;248,234,237,241,0,0
+	call	pyramp
+	end
+
+; mistnost 248 - zadni prava vzdalena cast velke pyramidy
+
+	room	248;250,247,238,242,0,0
+pyramz	call	sepod
+	plocha	(-,+,0;8),(-,0,+;8),9;8,1,2
+	plocha	(-,0,0;7),(-,0,+;7),9;7,1,2
+	plocha	(0,-,0;7),(0,-,+;7),9;1,7,2
+	end
+
+; mistnost 249 - zadni leva vzdalena cast velke pyramidy
+
+	room	249;223,242,250,254,0,0
+	call	pyramz
+	end
+
+; mistnost 254 - zadni leva cast velke pyramidy
+
+	room	254;222,243,249,220,0,0
+pyraml	call	sepod
+	plocha	(+,+,0;8),(+,0,+;8),9;1,1,2
+pyrp2	plocha	(+,0,0;7),(+,0,+;7),9;2,1,2
+	end
+
+; mistnost 239 - spodni leva vzdalena cast velke pyramidy
+
+	room	239;220,244,243,217,0,0
+	call	pyraml
+	end
+
+; mistnost 250 - predni strana bludiste
+
+	room	250;251,248,252,249,0,0
+	pxz	6,2;3;3,2,3
+	sx	3;3;2,2,3
+	pyz	6,2;3;2,3,3
+	bod	3;2,4,5
+	plocha	(0,0,+;3),(0,+,+;3),3;2,6,3
+	plocha	(0,0,+;2),(0,+,+;2),3;3,3,5
+	cz	2;3;3,5,5
+	cy	2;3;3,6,4
+	bod	3;3,8,5
+	cy	2;3;4,3,5
+	plocha	(0,0,+;2),(0,+,-;2),3;4,5,6
+	plocha	(0,0,+;3),(0,+,+;2),3;4,7,5
+	plocha	(0,0,+;2),(0,+,+;2),3;5,3,5
+	cy	2;3;5,5,5
+	plocha	(0,0,+;2),(0,+,*;2),3;5,7,6
+	sy	2;3;6,3,4
+	pyz	2,2;3;6,5,6
+	plocha	(0,0,+;2),(0,+,*;2),3;6,7,5
+	cx	2;3;7,2,5
+	plocha	(0,0,+;3),(+,0,+;2),3;7,3,5
+	plocha	(0,0,+;2),(+,0,*;2),3;7,4,5
+	plocha	(0,0,+;2),(0,+,-;3),3;7,6,8
+	plocha	(0,0,+;2),(+,0,+;2),3;7,6,6
+	plocha	(0,0,+;2),(0,+,-;2),3;8,7,9
+	sx	2;3;7,5,5
+sepod	pxy	8,8;4;1,1,2
+	end
+
+; mistnost 251 - leva strana bludiste
+
+	room	251;0,250,253,223,0,0
+	call	sepod
+	pxz	5,6;3;4,1,3
+	plocha	(0,0,+;3),(-,0,*;2),3;3,1,3
+	plocha	(0,0,+;4),(0,+,-;4),3;2,2,5
+	pyz	7,2;3;2,1,3
+	plocha	(+,0,0;2),(+,0,+;4),3;3,5,5
+	cy	7;3;8,1,9
+	cy	5;3;8,2,10
+	plocha	(+,0,0;2),(+,0,+;6),3;2,4,6
+	plocha	(0,0,+;2),(+,0,-;2),3;3,2,6
+	plocha	(0,0,+;2),(+,0,-;2),3;3,3,8
+	plocha	(0,0,+;3),(0,+,+;2),3;7,6,8
+	pxz	2,3;3;5,7,6
+	cz	2;3;3,7,5
+	cara	(+,+,0;2),3;3,6,5
+	plocha	(0,0,+;2),(+,0,+;4),3;3,6,6
+	sx	2;3;5,3,7
+	bod	0;7,1,8
+	bod	3;7,4,9
+	plocha	(0,0,+;2),(+,0,-;2),3;3,2,6
+	plocha	(0,0,+;2),(0,+,*;3),3;7,2,7
+	plocha	(0,0,+;3),(+,0,+;2),3;5,2,7
+	bod	3;5,1,9
+selev	pxz	8,13;4;1,8,3
+	end
+
+; mistnost 252 - prava strana bludiste
+
+	room	252;253,238,0,250,0,0
+	plocha	(0,0,+;3),(0,-,-;3),3;7,8,8
+	pyz	2,5;3;2,2,3
+	pxz	5,6;3;3,2,3
+	plocha	(0,0,+;3),(+,0,+;2),3;3,3,5
+	cx	3;3;5,3,6
+	pyz	2,6;3;1,3,3
+	cz	3;3;1,2,3
+	plocha	(+,0,0;3),(+,0,+;2),3;4,4,6
+	bod	3;3,2,9
+	cz	3;3;6,3,7
+	msx	2;3;3,4,5
+	cy	2;3;6,7,7
+	plocha	(0,0,+;2),(-,0,*;2),3;5,8,8
+	cz	3;3;2,8,10
+	bod	3;3,8,9
+	pxz	4,3;3;4,6,6
+	bod	0;5,6,8
+	plocha	(0,0,+;8),(0,-,+;2),3;1,8,2
+	sx	2;3;6,5,5
+	bod	3;5,5,5
+	cz	4;3;4,5,6
+	plocha	(0,0,+;2),(+,0,-;2),3;2,5,7
+	plocha	(0,0,+;6),(+,0,+;2),3;1,6,3
+	cz	4;3;1,5,3
+	bod	3;3,6,7
+	plocha	(0,0,+;2),(+,0,-;4),3;2,7,10
+	plocha	(-,0,0;2),(-,0,-;3),3;5,7,9
+seprpd	call	sepod
+seprav	pyz	8,13;4;8,1,3
+	end
+
+; mistnost 253 - zadni strana bludiste
+
+	room	253;0,252,0,251,0,0
+	pxz	7,7;3;1,1,3
+	pyz	6,8;3;1,2,3
+	bod	0;1,7,10
+	cz	2;0;6,1,8
+	cz	3;3;2,1,10
+	cy	2;3;6,2,8
+	sy	2;3;7,3,7
+	plocha	(0,-,0;2),(0,-,-;2),3;7,6,10
+	plocha	(0,0,-;3),(-,0,-;2),3;7,7,13
+	plocha	(0,0,-;4),(0,-,-;2),3;7,2,11
+	sx	3;3;2,7,8
+	msx	2;3;5,7,10
+	plocha	(0,0,-;2),(+,0,-;4),3;2,5,12
+	plocha	(0,0,-;2),(0,-,+;2),3;6,6,11
+	pyz	2,2;3;6,4,9
+	plocha	(0,0,-;4),(+,0,-;2),3;3,6,13
+	cz	3;3;2,6,9
+	plocha	(0,0,-;2),(+,0,-;3),3;1,4,11
+	msy	2;3;2,3,8
+	bod	3;5,6,9
+	pxz	2,2;3;4,4,10
+	cz	4;3;5,3,9
+	plocha	(0,0,-;3),(-,0,*;2),3;5,2,10
+	plocha	(0,0,-;2),(+,-,0;2),3;3,2,11
+	plocha	(0,0,-;2),(+,0,-;2),3;3,3,10
+	call	seprav
+seplpd	call	sepod
+	call	selev
+	end
+</script>
+
+<title>Hlípa map script viewer</title>
+<style>
+td {width:1.9em}
+body {width:768px}
+table {margin:2px -3px;font-size:20px}
+div {margin:8px 0}
+pre {font:11pt Consolas;border-style:solid none}
+</style>
+<div id=oi>
+<i>Hlípa</i> is an isometric computer game for 8-bit computers PMD-85 and Sharp
+MZ-800, with 16-bit Atari ST port, too. In the game, the player has to find
+and destroy six enemies in the shape of crowns.
+The game was designed and developed by Karel Šuhajda.
+<p>A source file for a preliminary game world map is available (<a
+href=http://pmd85.borik.net/wiki/Hl%C3%ADpa>pmd85.borik.net/wiki/Hlípa</a>, see
+link labeled "zdrojový kód" mapy), using special language to describe the rooms of
+the game. The preliminary map contains only three of the six crowns present in the
+final version. This web application is a tool for viewing room definitions
+contained in the map file.
+<p>Use the links below the room image to move to neighbouring rooms. After clicking
+the image you can also use arrow keys to move in the four basic directions.
+</div>
+
+<svg width=768 height=600 viewbox=0,0,256,200 tabindex=0
+onkeydown=return!!keyDown(event.keyCode)>
+<defs>
+<path id=S d=M1.3,7.5,16,13,30.7,7.5,16,2 />
+<g id=A>
+<path id=R d=M0,15.5v-8l16-6,16,6v8l-16,6 />
+<use xlink:href=#S fill=#fff />
+<path d=M1,7.9v7.5L16,21v-7.5 fill=#0be />
+<path d=M16,13.5v7.5l15-5.6v-7.5 fill=#bbb />
+</g>
+<g id=B>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#0be />
+<path d=M16,4a9,3.5,0,0,0,0,7a9,3.5,0,0,0,0,-7 fill=#444 />
+<path d=M11,7.5h2m2-2h2m0,2h-2m0,2h2m2-2h2 stroke=#000 />
+<path d=M1,7.9v7.5L16,21l15-5.6v-7.5L16,13.5 fill=#4f4 />
+</g>
+<g id=C>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#f4f />
+<path d=M1,7.9v7.5L16,21v-7.5 fill=#4f4 />
+<path d=M16,13.5v7.5l15-5.6v-7.5 fill=#0be />
+<path d=M8,11.3a3.3,2.2,70,1,0,0,6.2a3.3,2.2,70,0,0,0,-6.2 />
+</g>
+<g id=D>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#4ff />
+<path d=M1,7.9v7.5L16,21v-7.5 fill=#44f />
+<path d=M16,13.5v7.5l15-5.6v-7.5 fill=#0be />
+</g>
+
+<g id=E>
+<path d=M14,12h4v8h-4M0,7h3v8.5h-3M29,7h3v8.5h-3M0,15.5l16-6,16,6-16,6M6.7,15.5,16,19l9.3-3.5L16,12 />
+<path d=M15,12h2v8h-2M1,7h1v8.5h-1M30,7h1v8.5h-1M1.3,15.5,16,10,30.7,15.5,16,21M4,15.5,16,20,28,15.5,16,11 fill=#bbb />
+</g>
+<g id=F>
+<path d=M14,12h4v8.5h-4M0,7h3v8.5h-3M29,7h3v8.5h-3 />
+<path d=M15,12h2v9h-2M1,7h1v9h-1M30,7h1v9h-1 fill=#bbb />
+</g>
+<g id=G>
+<path d=M14,2.5h4v18h-4M0,7.5h3v8h-3m29-8h3v8h-3M0,7.5l16-6,16,6-16,6M6.7,7.5,16,11l9.3-3.5L16,4 />
+<path d=M15,2.5h2v18.5h-2M1,7.5h1v8.4h-1m29-8.4h1v8.4h-1M1.3,7.5,16,2,30.7,7.5,16,13M4,7.5,16,12,28,7.5,16,3 fill=#bbb />
+<path d=M4,7.5,16,3,28,7.5,16,12M6.7,7.5,16,11l9.3-3.5L16,4 />
+</g>
+
+<g id=H>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#4f4 />
+<path d=M1,7.9v7.5l14,5.3v-7.5M17,13.2v7.5l14-5.3v-7.5 fill=#444 />
+</g>
+<g id=I>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#aaa />
+<path d=M1,7.9v7.5L16,21v-7.5 fill=#f44 />
+<path d=M16,13.5v7.5l15-5.6v-7.5 fill=#4ff />
+</g>
+<g id=J>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#b00 />
+<path d=M1,7.9v7.5L16,21l15-5.6v-7.5L16,13.5 fill=#00e />
+</g>
+<g id=K>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#ff4 />
+<path d=M1,7.9v7.5L16,21l15-5.6v-7.5L16,13.5 fill=#bbb />
+</g>
+<g id=L>
+<path d=M0,7.5v8h8l8,6,8-6h8v-8l-16-6 />
+<use xlink:href=#S fill=#fff />
+<path d=M1,7.9v7.1h7l8,6,8-6h7v-7.1L16,13.5 fill=#fff />
+</g>
+<g id=M>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#4ff />
+<path d=M1,7.9v7.5L16,21l15-5.6v-7.5L16,13.5 fill=#00e />
+</g>
+<g id=N>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#f4f />
+<path d=M1,7.9v7.5l14,5.3v-7.5M17,13.2v7.5l14-5.3v-7.5 fill=#bbb />
+</g>
+<g id=O>
+<use xlink:href=#R />
+<use xlink:href=#S fill=#0b0 >
+<path d=M1,7.9v7.5L16,21v-7.5 fill=#44f />
+<path d=M16,13.5v7.5l15-5.6v-7.5 fill=#bb0 />
+</g>
+
+<g id=P>
+<circle fill=#fff cx=16 cy=13 r=7 />
+<path stroke=#bbb stroke-linecap=square d="m3.5,17.5zm1-2zm0-2zm1-5zm0,2zm0,7zm1,1z
+m0-1zm0-2zm0-4zm1-5zm0,6zm0,9zm1-3zm0-3zm0-3zm0-3zm0-2zm0-2zm1-2zm0,14zm0,4zm1-7z
+m1-9zm0,3zm0,8zm0,4zm0,2zm1-9zm0-9zm1-3zm0,4zm0,12zm0,3zm1,3zm0-4zm0-4zm0-7zm0-5z
+m1,3zm0,14zm0,1zm1,1zm0-6zm0-7zm0-5zm1-1zm0,8zm0,7zm0,2zm1-7zm0-4zm1-5zm0,2zm0,11z
+m0,6zm1-2zm0-1zm0-2zm1,1zm0-3zm0-5zm0-2zm0-2zm0-4zm1,2zm0,2zm0,5zm0,2zm0,4zm0,4z
+m1-12zm1-1zm0,2zm0,2zm0,3zm0,2zm0,2zm1-3zm0-2zm0-1zm0-3zm0-5zm1,2zm0,7zm1,3zm0-5z
+m0-6zm1,5z"/>
+<path stroke=#000 stroke-linecap=square d="m1.5,16.5zm1-2zm0-4zm1-1zm2-2zm0,7zm0,6z
+m1-7zm1-9zm0,4zm0,2zm0,5zm0,1zm0,2zm0,4zm1-2zm0-4zm0-3zm0-2zm0-5zm1-1zm0,3zm0,1z
+m0,1zm0,2zm0,1zm0,1zm0,2zm0,3zm1,4zm0-2zm0-2zm0-2zm0-1zm0-4zm0-1zm0-2zm0-2zm0-3z
+m0-2zm1,5zm0,2zm0,2zm0,2zm0,2zm0,2zm0,1zm1,3zm0-1zm0-5zm0-9zm0-5zm1,1zm0,4zm0,1z
+m0,1zm0,2zm0,2zm0,2zm0,2zm0,3zm0,5zm1-3zm0-3zm0-2zm0-5zm0-2zm0-3zm1-2zm0,4zm0,2z
+m0,1zm0,3zm0,2zm0,1zm0,2zm1,2zm0-1zm0-3zm0-2zm0-2zm0-7zm0-5zm1,1zm0,4zm0,1zm0,1z
+m0,2zm0,2zm0,3zm0,2zm0,6zm1,1zm0-3zm0-1zm0-2zm0-2zm0-2zm0-4zm0-4zm1-5zm0,7zm0,1z
+m0,2zm0,2zm0,2zm0,4zm1,4zm0-6zm0-2zm0-4zm0-5zm0-2zm0-2zm1,10zm0,1zm0,1zm0,7zm1-2z
+m0-2zm0-2zm0-4zm0-1zm0-2zm1-5zm0,1zm0,10zm0,2zm1,7zm0-6zm0-5zm0-4zm0-2zm2,1zm0,2z
+m0,2zm0,2zm0,4zm0,3zm2-9zm0,5z"/>
+</g>
+<path id=Q d=m7.5-.5,4,5,4.5-5,4.5,5,4-5-2,11a6.5,2.5,0,0,1-13,0zM21,10.2a6.5,2.5,0,0,1-10,0M12,6l4-2.5,4,2.5 stroke=#000 fill=#ff4 />
+</defs>
+<path d=m0,0h256v200H0 />
+<g id=T />
+</svg>
+
+<table id=od></table>
+Room (0–254): <input type=text id=roomn value=0 onchange=goRoom(value&255) size=2>
+Y limit: <input type=text id=ylimit value=1 size=2 onchange=redraw()>
+Z limit: <input type=text id=zlimit value=16 size=2 onchange=redraw()>
+<span id=box></span>
+<div id=path></div>
+<pre id=o></pre>
+
+<script>
+// Hlipa map script viewer, version 0.2, August 2017
+// by Lukas Petru
+
+// Open source under the MIT License (Expat).
+
+function bod(t,x,y,z){
+ x>0&&x<9&&y>0&&y<9?
+ v[(y*8-8+x-1)*16+(z-1&15)]=[0,1,4,8,9,10,11,12,13,14,15,5,6,7,2,3,16,17][t]:0}
+function kanal(x,y,z,l){bod(14,x,y,z,channelin.push(l))}
+function usti(x,y,z,l){bod(15,x,y,z,channelout=[l,x,y,z])}
+function sloup(c,x,y,z){
+ bod(11,x,y,z++)
+ for (;c>2;c--) bod(12,x,y,z++)
+ bod(13,x,y,z)
+}
+function cara(dx,dy,dz,c,t,x,y,z,i){
+ for (i=0;i<c;i++) bod(t,x+i*dx,y+i*dy,z+i*dz)
+}
+function cx(c,t,x,y,z){cara(1,0,0,c,t,x,y,z)}
+function cy(c,t,x,y,z){cara(0,1,0,c,t,x,y,z)}
+function cz(c,t,x,y,z){cara(0,0,1,c,t,x,y,z)}
+function sx(c,t,x,y,z){cara(1,0,1,c,t,x,y,z)}
+function sy(c,t,x,y,z){cara(0,1,1,c,t,x,y,z)}
+function msx(c,t,x,y,z){cara(-1,0,1,c,t,x,y,z)}
+function msy(c,t,x,y,z){cara(0,-1,1,c,t,x,y,z)}
+function spx(c,c2,x,y,z){cx(c,11,x,y,z++),c2>2?cx(c,12,x,y,z++):0,cx(c,13,x,y,z)}
+function spy(c,c2,x,y,z){cy(c,11,x,y,z++),c2>2?cy(c,12,x,y,z++):0,cy(c,13,x,y,z)}
+function ssp(dx,dy,dz,c,_,x,y,z){cara(dx,dy,dz,c,11,x,y,z),cara(dx,dy,dz,c,13,x,y,z+1)}
+function plocha(dx,dy,dz,c,ex,ey,ez,ec,t,x,y,z,i){
+ for (i=0;i<c;i++) cara(ex,ey,ez,ec,t,x+i*dx,y+i*dy,z+i*dz)
+}
+function pxy(c1,c2,t,x,y,z){plocha(1,0,0,c1,0,1,0,c2,t,x,y,z)}
+function pxz(c1,c2,t,x,y,z){plocha(1,0,0,c1,0,0,1,c2,t,x,y,z)}
+function pyz(c1,c2,t,x,y,z){plocha(0,1,0,c1,0,0,1,c2,t,x,y,z)}
+
+window.onerror=alert,
+function(i){
+ eval("V={\n"+
+ scr.textContent.replace(/^\n?;.*\n|[()]/gm, "")
+ .toLowerCase()
+ .replace(/;/g, ",")
+ .replace(/^(\w+)(\susti.*)/gm, "$2,'$1'")
+ .replace(/^\tsubr\n(\w+)/gm, ",get $1(){\n")
+ .replace(/^(\w+)\s/gm, "V.$1}\n,get $1(){\n\t")
+ .replace(/\tend/g, "}")
+ .replace(/\troom\s+(\d+),(.*)/g, ",get $1(){directory[$1]=[$2]")
+ .replace(/call\t(\w+)/g, "V.$1")
+ .replace(/kanal\t(.*,)(.*)/g, "kanal($1'$2')")
+ .replace(/-/g, "-1").replace(/\+/g, "1").replace(/\*/g, "2")
+ .replace(/(\t\w+)\s(.*)/g, "$1($2)").slice(1)+"}")
+ v=[],channel={},directory=[]
+ for (i=0;i<255;i++)
+  channelin=[],channelout=0,V[i],(c=channelout)?channel[c[0]]=[i,c[1],c[2],c[3]]:0,
+  (c=channelin).length?channel[i]=c[0]:0
+ i=0
+ path.textContent="Path to crowns: 0"+"65553112033152120211140430203012131251230"
+ .replace(/./g,function(x){return" "+"↖↘↗↙↑↓»"[x]+(i=x<6?directory[i][x]:channel[channel[i]][0])})
+}()
+
+function drawTile(t,x,y,z){return"<use xlink:href=#"+String.fromCharCode(64+t)+
+ " x="+(112+16*x-16*y)+" y="+(185-8*z-6*(x+y)+(t==16?3:0))+" />"}
+function bbox(t,x,y,z){t<16?(x<minx?minx=x:0,x>maxx?maxx=x:0,
+ y<miny?miny=y:0,y>maxy?maxy=y:0,z<minz?minz=z:0,z>maxz?maxz=z:0):0}
+function drawVoxels(s,t,x,y,z){
+ minx=miny=minz=16,maxx=maxy=maxz=1
+ for (s="",y=7;y>=0;y--)
+ for (x=7;x>=0;x--)
+ for (z=0;z<16;z++)
+  (t=v[(y*8+x)*16+z])?
+  (bbox(t,x+1,y+1,z+1),z<zlimit.value&&y>=ylimit.value-1?s+=drawTile(t,x,y,z):0):0
+ return s
+}
+
+function extractText(s){
+ s=scr.textContent.match(RegExp("(?:^;.*\\n*)?^"+s+"[^]*?end\\n","m"))[0],
+ s.replace(/call\t(.*)/g,function(_,a){s+="\n"+extractText(a+"\\s")});return s}
+function keyDown(k,r){
+ r=1,k==45?nextRoom():[37,39,38,40].map(function(x,i){
+ x==k?goRoom(directory[roomn.value][i],r=0):0});return r}
+function nextRoom(r){
+ for(r=roomn.value;!((r=++r&255)in V)&&r;);
+ roomn.value=r,redraw()
+}
+function goRoom(i){
+ oi.hidden=1,roomn.value=i,ylimit.value=1,zlimit.value=16,redraw()}
+function link(i){return"<a href=# onclick=return!!goRoom("+i+")>"+i+"</a>"}
+
+function redraw(r,d){
+ v=[],channelin=[],r=roomn.value
+ V[r],d=directory[roomn.value]
+ d&&d.length==9?bod(17,d[6],d[7],d[8]):d&&d.length>9?bod(16,d[7],d[8],d[9]+1):0
+ T.innerHTML=drawVoxels()
+ od.innerHTML=!d?"":
+  "<tr><td rowspan=2>Directions"+
+  "↖↗↑ ↙↘↓".replace(/./g,function(x,i){return "<td>"+
+   (x==" "?(channel[r]?"»"+link(channel[channel[r]][0]):"")+"<tr>":
+   x+link(d["0240315"[i]]))
+  })
+ box.textContent=d?" BBox X "+minx+"–"+maxx+" Y "+miny+"–"+maxy+" Z "+minz+"–"+maxz:""
+ o.textContent=d?extractText("\\troom\\s+"+r):""
+}
+redraw()
+</script>
